@@ -1,0 +1,40 @@
+Docker Installation On windows 10/11
+
+Prerequisite
+
+64-bit processor with Second Level Address Translation (SLAT)
+4GB system RAM
+BIOS-level hardware virtualization support must be enabled in the BIOS settings. For more information, see Virtualization.
+
+Main Steps:-
+
+Step 1:- check system configuration should be match to above one.
+window > type "System Information"
+
+Step 2:- Install latest binary from docker portal.
+ref:- https://docs.docker.com/desktop/install/windows-install/
+
+Step 3:- Goto download folder and execute installed binary by clicking on it
+
+step 4:- Download linux kernal update package by using below url
+ref:- https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+
+step 5:- Goto download folder and execute instal linux kernal binary by clicking on it.
+
+Step 6:- open powershell and run below command.
+wsl --set-default-version 2
+
+step 7:- Open Microsoft store and install your Linux distribution of choice. Here I am intalling Ubuntu 18.04 LTS.
+ref :- https://www.microsoft.com/store/apps/9N9TNGVNDL3Q
+
+step 8:- You will then need to create a user account and password for your new Linux distribution.
+
+step 9:- Goto window and launch your docker desktop app.
+
+Note:- This document you can access from my git repo.
+ref:- 
+
+Thanks for watching this video and please subscribe my chanel.
+
+
+
