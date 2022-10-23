@@ -21,18 +21,19 @@ ref:- https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 
 step 5:- Goto download folder and execute instal linux kernal binary by clicking on it.
 
-Step 6:- open powershell and run below command.
+Step 6:- open cmd and run below command.
 wsl --set-default-version 2
 
 step 7:- Open Microsoft store and install your Linux distribution of choice. Here I am intalling Ubuntu 18.04 LTS.
 ref :- https://www.microsoft.com/store/apps/9N9TNGVNDL3Q
 
 step 8:- You will then need to create a user account and password for your new Linux distribution.
+i have already done it so i can not show here but it is very simple.
 
 step 9:- Goto window and launch your docker desktop app.
 
 Note:- This document you can access from my git repo.
-ref:- 
+ref:- https://github.com/LOKI0307/Docker
 
 Thanks for watching this video and please subscribe my chanel.
 

@@ -1,0 +1,36 @@
+Agenda: - Agenda of this video is that to create a mysql database container for practice purpose for those student/learners who wants to practice database concepts locally.
+
+Pre-requisite: - You should have docker installed on your system.
+
+Steps:-
+
+Step 1> Open docker desktop application check docker is running or not and then create a volume using volumes option in docker desktop application.
+
+Step 2> Pull latest mysql image from docker hub. Here in this example, I will use latest image.
+
+Step 3> Run below docker command for creating mysql database container.
+command: - docker run --detach --name=mysql-server --env="MYSQL_ROOT_PASSWORD=loki" --publish 6603:3306 --volume=mysql-volume:/var/lib/mysql mysql
+
+ref:- Here we are using "MYSQL_ROOT_PASSWORD" as environment variable for set your database password.
+
+Step 4> Download MYSQL workbench tool for accessing your container base mysql database.
+ref:- https://dev.mysql.com/downloads/workbench/
+
+Step 5> Open MYSQL workbench tool clicks on database then click on connect to database then enter hostname as "127.0.0.1", port number as "6603" and username as "root".
+
+Step 6> After stablishing connection create database in mysql database using below command.
+show databases;
+CREATE DATABASE sample;
+use sample;
+show tables;
+CREATE TABLE pet (name VARCHAR(20), owner VARCHAR(20),species VARCHAR(20), sex CHAR(1), birth DATE, death DATE);
+show tables;
+describe pet;
+
+Note:- Purpose of step 1 was to create permanent storage point for our database. For example if I will create an any database object in my present container and my current container get 
+destroy and then you will create other container with same volume so in that condition you can access your old object as well.
+
+Thanks for watching my vedios please do share and like this vedio.
+
+Gitrepo:- https://github.com/LOKI0307/Docker.git
+
